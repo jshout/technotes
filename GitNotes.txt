@@ -31,9 +31,11 @@ Commit
 
 	git log shows commit
 
+	git remote add origin https://github.com/jshout/technotes.git
+
 Upload commit to remote repo
  	pull checks to see if any remote changes since last clone.
-	git push origin master
+	git push -u origin main
 
 
 Workflow
