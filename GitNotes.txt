@@ -1,0 +1,94 @@
+
+
+GIT Notes - common commands
+
+GitHub:  (old term master = new term main)
+
+git help <verb>
+
+Create a new project directory local machine. Change to the directory and type:
+  git init
+
+To stop tracking delete the .git directory within this tracked directory.
+
+
+   ..  git status
+
+	..   touch .gitignore
+	Add file names to the gitignore file to remove them from commit.
+	gitignore file should be commited
+
+
+Add modified files to staging area
+	git add -A   adds all changed files
+	git add mynewfile  adds a single file
+	git reset filename removes this file from staging area
+	git reset removes all
+	git diff shows changes
+
+Commit
+	git commet -m type a message
+
+	git log shows commit
+
+Upload commit to remote repo
+ 	pull checks to see if any remote changes since last clone.
+	git push origin master
+
+
+Workflow
+	create a branch off of the master
+
+	git branch newbranch2. - create a local branch in project dir
+	git checkout newbranch2  -  start working on newbranch2
+	git branch  - shows branches
+Now commits etc work on this branch
+
+	Push local branch to remote repo
+	git push origin main
+	git push -u origin newbranch2
+	after this, git push will push to remote repo
+
+Git branch -a    shows all branches
+
+To merge branches
+	switch to local master - git checkout master
+	git pull origin master. - pull down all changes since last pull
+	merge branches (currently in master) -  git merge newbranch2
+	push to online repo. -  git push origin master
+	to view merged.  -  git branch merged
+
+Delete branch
+	git branch -d newbranch2 - delete local branch
+	git push origin \'97delete newbranch2  - delete remote branch
+
+
+Cloning a repo
+	git clone <url> <my local dir ../Joe/newrepo/> a period is current dir
+	git clone https://github.com/githubID/newrepo .
+
+	git clone git@github.com:jshout/test1.git
+
+
+
+
+
+git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+ or 
+ git clone https://github.com/user-name/repository-name.git
+
+
+
+git push origin main
+
+
+
+
+git commit -m "A message describing what you have done to make this snapshot different"
+
+
+git status
+
+
+git log
+git remote -v\expnd0\expndtw0\kerning0
